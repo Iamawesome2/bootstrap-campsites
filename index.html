@@ -2,20 +2,20 @@
 <html lang="en">
 
 <head>
-     <!-- Required meta tags always come first -->
-     <meta charset="utf-8" />
-     <meta name="viewport" content="width=device-width, initial-scale=1" />
- 
-     <!-- Bootstrap CSS -->
-     <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-     <!-- Additional CSS must be placed after Bootstrap CSS -->
-     <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
-     <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
-     <link rel="stylesheet" href="css/styles.css" />
- 
-     <title>NuCamp: A Better Way To Camp</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css" />
+
+    <!-- Additional CSS must be placed after Bootstrap CSS -->
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans" />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>NuCamp: A Better Way To Camp</title>
 </head>
 
 <body>
@@ -23,6 +23,9 @@
     <header class="jumbotron jumbotron-fluid">
         <div class="container">
             <div class="row">
+                <div class="col-4 col-sm-3 col-md-2 align-self-center">
+                    <img src="img/logo.png" class="img-fluid" />
+                </div>
                 <div class="col">
                     <h1>NuCamp</h1>
                     <h2>a better way to camp</h2>
@@ -33,7 +36,8 @@
 
     <nav class="navbar navbar-expand-sm navbar-dark stick-top">    <!-- navbar dark makes letters lighter color to go better with a dark navbar, stick top makes navbar stay at top of page when scrolling down-->
         <div class="container">                                    <!-- changes padding of text menu-->
-            <button class="navbar-toggler ml-auto" type="button" data-toggler="collapse" data-target="#nucamNavbar">  <!-- creates a nav bar that collapses to three stacked lines icon in extra small viewport, ml auto pushes it to right side-->
+            <a class="navbar-brand" href="#"><img src="img/logo.png" height="30" width="30" /></a>
+            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#nucamNavbar">  <!-- creates a nav bar that collapses to three stacked lines icon in extra small viewport, ml auto pushes it to right side-->
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="nucampNavbar">     <!--put list in div with id that matches data target-->
@@ -53,8 +57,13 @@
                 <h2 class="text-sm-right">Discover & Review</h2>
             </div>
             <div class="col">
-                <h3>Our Campsites</h3>
-                <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/breadcrumb-trail-thumb.jpg" alt="Breadcrumb Trail thumbnail"/>  <!-- img-thumbnail rounds corners and adds border, mr-3 add margin to right, d-flex helps with bugs in media objects --> 
+                    <div class="media-body align-self-center">
+                        <h3>Our Campsites</h3>
+                        <p class="d-none d-sm-block">Explore our growing database of curated campsites and leave your own reviews!</p>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -73,13 +82,18 @@
                 <h2 class="text-sm-right">Our Community Partners</h2>
             <div>
             <div class="col">
-                <h3>Bootstrap Outfitters</h3>
-                <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>     <!-- d-none and d-sm-block makes this text disappear on xs viewport-->
+                <div class="media">
+                    <img class="d-flex mr-3 img-thumbnail" src="img/bootstrap-thumb.png" alt="Bootstrap Outfitters" />
+                    <div class="media-body align-self-center">
+                        <h3>Bootstrap Outfitters</h3>
+                        <p class="d-none d-sm-block">Bootstrap Outfitters supplies you with gear you need at prices you can't beat.</p>     <!-- d-none and d-sm-block makes this text disappear on xs viewport-->
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
-    <footer>
+    <footer class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-4 col-sm-2 offset-1">
@@ -100,7 +114,7 @@
                 </div>
                 <div class="col-sm-4 text-center">
                     <a role="button" class="btn btn-link" href="tel:+12065551234"><i class="fa fa-phone"></i> 1-206-555-1234<br></a>     
-            	    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
+                    <a role="button" class="btn btn-link" href="mailto:campsites@nucamp.co"><i class="fa fa-envelope-o"></i> campsites@nucamp.co</a>
                 </div>
             </div>
         </div>

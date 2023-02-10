@@ -34,14 +34,14 @@
         </div>
     </header>
 
-    <nav class="navbar navbar-expand-sm navbar-dark stick-top">    <!-- navbar dark makes letters lighter color to go better with a dark navbar, stick top makes navbar stay at top of page when scrolling down-->
-        <div class="container">                                    <!-- changes padding of text menu-->
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>     <!-- home button logo returns to home/index.html when clicked-->
-            <button class="navbar-toggler" type="button" data-toggler="collapse" data-target="#nucamNavbar">  <!-- creates a nav bar that collapses to three stacked lines icon in extra small viewport, ml auto pushes it to right side-->
+    <nav class="navbar navbar-expand-sm navbar-dark sticky-top">        <!-- navbar dark makes letters lighter color to go better with a dark navbar, stick top makes navbar stay at top of page when scrolling down-->
+        <div class="container">                                         <!-- changes padding of text menu-->
+            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="30" /></a>  <!-- returns to home/index.html when clicked-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nucampNavbar">     <!-- creates a nav bar that collapses to three stacked lines icon in extra small viewport, ml auto pushes it to right side-->
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="nucampNavbar">     <!--put list in div with id that matches data target-->
-                <ul class="navbar-nav">                                                            <!-- this and class above cause navbar to expand on small and up viewports-->
+            <div class="collapse navbar-collapse" id="nucampNavbar">       <!--put list in div with id that matches data target-->
+                <ul class="navbar-nav">                                     <!-- this and class above cause navbar to expand on small and up viewports-->
                     <li class="nav-item"><a class="nav-link" href="index.html"><i class="fa fa-home fa-lg"></i> Home</a></li>         <!-- nav-item-active helps with appearance and acitve is moved to about because we are on the about page-->  
                     <li class="nav-item active"><a class="nav-link" href="#"><i class="fa fa-info fa-lg"></i> About</a></li>    <!-- nav-link changes look of navigation spacing, i class is icons, info icon large size, # tag means just go to top of this page-->
                     <li class="nav-item"><a class="nav-link" href="#"><i class="fa fa-list fa-lg"></i> Sites</a></li>

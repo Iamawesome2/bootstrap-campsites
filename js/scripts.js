@@ -11,8 +11,8 @@ $(function(){                                             //JQuery code for caro
             $("#carouselButton").children("i").addClass("fa-pause");
         }
     });
+    
 });
-
 
 $('#reserveButton').click(function(){
     $('#reserveModal').modal('show')
